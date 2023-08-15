@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import Button from "../Common/Button";
+import heroImg from "../../assets/heroImg.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -12,10 +13,13 @@ const Hero = () => {
 
   return (
     <div className="hero-page">
-      <header className="header">
-        <h1>PAINT BOX</h1>
-        <p>We got you covered</p>
-      </header>
+      <div className="header-wrapper">
+        <div className="header-content">
+          <h1 className="header">PAINT BOX</h1>
+          <p className="sub-header">Order your project needs from anywhere</p>
+        </div>
+        <img className="header-image" src={heroImg} alt="hero-img" />
+      </div>
 
       <section className="featured-products">
         <h2>Featured Products</h2>
