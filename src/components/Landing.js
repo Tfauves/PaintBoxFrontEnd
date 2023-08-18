@@ -40,7 +40,9 @@ const Landing = () => {
       <Section id="section4" backgroundColor="#1c2c4c" textColor="#4c768d">
         <BrowseColorGallery />
       </Section>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

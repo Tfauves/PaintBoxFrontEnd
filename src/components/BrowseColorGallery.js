@@ -1,6 +1,7 @@
 import React from "react";
+import ColorGallery from "./ColorGallery";
 
 const BrowseColorGallery = () => {
-  return <h1>the color gallery</h1>;
+  return <ColorGallery />;
 };
 export default BrowseColorGallery;
