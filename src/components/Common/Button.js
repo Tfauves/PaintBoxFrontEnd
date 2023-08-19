@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Button.css"; // Import a separate CSS file for styling
 
 const Button = (props) => {
   const [hover, setHover] = useState(false);
@@ -8,27 +9,13 @@ const Button = (props) => {
       type={props.type || "submit"}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      style={{
-        ...styles.button,
-        ...props.style,
-        transition: "all ease-in-out .5s",
-        opacity: hover ? "100%" : "85%",
-      }}
+      className={`custom-button ${hover ? "hovered" : ""}`}
       onClick={props.onClick}
       disabled={props.disabled}
     >
       {props.disabled ? <p>Loading...</p> : props.children}
     </button>
   );
-};
-
-const styles = {
-  button: {
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "25px",
-    cursor: "pointer",
-  },
 };
 
 export default Button;

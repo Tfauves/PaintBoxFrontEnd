@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "./Hero/Hero";
-import Section from "./Common/Section";
-import Footer from "./Footer";
-import FeaturedProduct from "./FeaturedProduct";
-import About from "./About";
-import BrowseColorGallery from "./BrowseColorGallery";
+import Hero from "../Hero/Hero";
+import Section from "../Common/Section";
+import Footer from "../Footer";
+import FeaturedProduct from "../Products/FeaturedProduct";
+import About from "../About";
+import BrowseColorGallery from "../Color/BrowseColorGallery";
 
 const Landing = () => {
   return (

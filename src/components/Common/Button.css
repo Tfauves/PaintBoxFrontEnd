@@ -1,0 +1,17 @@
+.custom-button {
+  border: none;
+  padding: 10px 20px;
+  min-width: 103px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-button.hovered {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the color as needed */
+  opacity: 1;
+}
+
+.custom-button[disabled] {
+  cursor: not-allowed;
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Hero from "../Hero/Hero";
 import NavBar from "../Navbar/Navbar";
-import Landing from "../Landing";
+import Landing from "../Home/Landing";
+import ColorGallery from "../Color/ColorGallery";
 
 const AppRouter = () => {
   return (
@@ -11,6 +11,7 @@ const AppRouter = () => {
       <div>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/colorGallery" element={<ColorGallery />} />
         </Routes>
       </div>
     </div>
