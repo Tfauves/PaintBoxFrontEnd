@@ -26,7 +26,7 @@ const ColorGallery = () => {
       <h2>Available Colors</h2>
       <ul>
         {colors.map((color) => (
-          <li key={color.name}>
+          <li key={color.id}>
             <Color color={color} />
           </li>
         ))}
