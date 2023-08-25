@@ -1,7 +1,7 @@
 import React from "react";
 
 const Color = (props) => {
-  const { id, english, hex, lrvCategory } = props.color;
+  const { id, name, hex, lrv, ralNum } = props.color;
 
   const cardStyle = {
     backgroundColor: hex,
@@ -13,8 +13,9 @@ const Color = (props) => {
 
   return (
     <div style={cardStyle}>
-      <p>Color name: {english}</p>
-      <p>LRV rating: {lrvCategory}</p>
+      <p>Color name: {name}</p>
+      <p>LRV rating: {lrv}</p>
+      <p>{ralNum}</p>
     </div>
   );
 };
