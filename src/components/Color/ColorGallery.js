@@ -21,16 +21,19 @@ const ColorGallery = () => {
     _fetchColors();
   }, []);
 
+  const sortedColors = [...colors].sort((a, b) =>
+    a.ralNum.localeCompare(b.ralNum)
+  );
+
   return (
     <div>
       <h2>Available Colors</h2>
-      <ul>
-        {colors.map((color) => (
-          <li key={color.ralNum}>
-            <Color color={color} />
-          </li>
-        ))}
-      </ul>
+
+      {sortedColors.map((color) => (
+        <div key={color.name}>
+          <Color color={color} />
+        </div>
+      ))}
     </div>
   );
 };

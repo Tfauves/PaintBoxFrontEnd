@@ -4,11 +4,13 @@ const Color = (props) => {
   const { id, name, hex, lrv, ralNum } = props.color;
 
   const cardStyle = {
+    maxWidth: "50%",
+    margin: "30px",
     backgroundColor: hex,
     padding: "10px",
     borderRadius: "5px",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-    color: "#fff",
+    color: "#303030",
   };
 
   return (
