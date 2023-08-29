@@ -25,15 +25,25 @@ const ColorGallery = () => {
     a.ralNum.localeCompare(b.ralNum)
   );
 
+  const gridContainerStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    gap: "30px",
+    width: "100%",
+    boxSizing: "border-box",
+    padding: "20px",
+  };
+
   return (
     <div>
-      <h2>Available Colors</h2>
-
-      {sortedColors.map((color) => (
-        <div key={color.name}>
-          <Color color={color} />
-        </div>
-      ))}
+      <h2 style={{ marginTop: "3em" }}>Available Colors</h2>
+      <div style={gridContainerStyle}>
+        {sortedColors.map((color) => (
+          <div key={color.name}>
+            <Color color={color} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
