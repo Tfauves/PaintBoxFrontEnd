@@ -28,9 +28,11 @@ const Color = (props) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <p>Color name: {name}</p>
+      <div>
+        <p>{ralNum}</p>
+      </div>
+      <p>Color: {name}</p>
       <p>LRV rating: {lrv}</p>
-      <p>{ralNum}</p>
     </div>
   );
 };

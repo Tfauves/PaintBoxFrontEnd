@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Color from "./Color";
+import Footer from "../Footer";
 
 const ColorGallery = () => {
   const [colors, setColors] = useState([]);
@@ -27,22 +28,24 @@ const ColorGallery = () => {
 
   const gridContainerStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
+    gridTemplateColumns: "repeat(3, 1fr)",
     gap: "30px",
     width: "100%",
-    boxSizing: "border-box",
-    padding: "20px",
+    marginBottom: "30px",
   };
 
   return (
     <div>
-      <h2 style={{ marginTop: "3em" }}>Available Colors</h2>
+      <h2 className="header2">Available Colors</h2>
       <div style={gridContainerStyle}>
         {sortedColors.map((color) => (
           <div key={color.name}>
             <Color color={color} />
           </div>
         ))}
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
