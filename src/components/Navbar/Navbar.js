@@ -30,7 +30,7 @@ const NavBar = (props) => {
         {/* <h2 style={{ color: "#f1f1f1" }}>Report It</h2> */}
         <NavButton style={{}} to="/" label="Paint Box" />
       </div>
-      {/* <div
+      <div
         style={{
           flex: 1,
           marginTop: "0em",
@@ -44,7 +44,7 @@ const NavBar = (props) => {
           justifyContent: "flex-end",
         }}
       >
-        {auth.token ? (
+        {/* {auth.token ? (
           <div>
             {currentPath === "/adminlogin" ? (
               <NavButton style={{}} to="/admindash" label="dashboard" />
@@ -59,8 +59,11 @@ const NavBar = (props) => {
             <NavButton style={{ color: "#303030" }} to="/login" label="login" />
             <NavButton style={{}} to="/about" label="about" />
           </div>
-        )}
-      </div> */}
+        )} */}
+        <div>
+          <NavButton style={{}} to="/products" label="products" />
+        </div>
+      </div>
     </nav>
   );
 };
