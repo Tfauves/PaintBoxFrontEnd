@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import "../Products/Product.css";
 import heroImg from "../../assets/heroImg.jpg";
 import { useNavigate } from "react-router-dom";
 

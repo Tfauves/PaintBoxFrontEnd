@@ -8,7 +8,7 @@ const Products = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await axios.get(`http://localhost:8080/api/product`);
+      const response = await axios.get(`http://localhost:8080/api/paint`);
       console.log(response.data);
       setProducts(response.data);
       setLoading(false);
