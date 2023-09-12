@@ -44,6 +44,10 @@
   letter-spacing: 1.5px;
 }
 
+.hero-btn {
+  margin-top: 60px;
+}
+
 .featured-products {
   margin-bottom: 40px;
 }

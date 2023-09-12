@@ -9,12 +9,7 @@ import BrowseColorGallery from "../Color/BrowseColorGallery";
 const Landing = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
-      <Section
-        id="section1"
-        // backgroundImage={heroImg}
-        backgroundColor="#1c2c4c"
-        textColor="#4c768d"
-      >
+      <Section id="section1" backgroundColor="#1c2c4c" textColor="#4c768d">
         <div
           style={{
             display: "flex",
