@@ -9,7 +9,7 @@ import BrowseColorGallery from "../Color/BrowseColorGallery";
 const Landing = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
-      <Section id="section1" backgroundColor="#1c2c4c" textColor="#4c768d">
+      <Section id="section1" backgroundColor="#d7e5fc" textColor="#161d29">
         <div
           style={{
             display: "flex",
@@ -26,14 +26,14 @@ const Landing = () => {
           /> */}
         </div>
       </Section>
-      <Section id="section2" backgroundColor="#4c1c2c" textColor="#8d4c76">
+      <Section id="section2" backgroundColor="#7b9bd1" textColor="#161d29">
         <FeaturedProduct />
       </Section>
-      <Section id="section3" backgroundColor="#2c4c1c" textColor="#768d4c">
-        <About />
-      </Section>
-      <Section id="section4" backgroundColor="#1c2c4c" textColor="#4c768d">
+      <Section id="section4" backgroundColor="#4268a8" textColor="#161d29">
         <BrowseColorGallery />
+      </Section>
+      <Section id="section3" backgroundColor="#c5c7c9" textColor="#161d29">
+        <About />
       </Section>
       <div>
         <Footer />

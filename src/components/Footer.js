@@ -4,6 +4,7 @@ const Footer = () => {
   const FooterStyle = {
     padding: "30px",
     marginBottom: "-30px",
+    background: "#8d8e8f",
   };
 
   return (
